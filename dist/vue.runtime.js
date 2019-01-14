@@ -1001,7 +1001,7 @@
     // cater for pre-defined getter/setters
     var getter = property && property.get;
     var setter = property && property.set;
-    if ((!getter || setter) && arguments.length === 2) {
+    if ((!getter /* || setter */) && arguments.length === 2) {
       val = obj[key];
     }
 
